@@ -11,7 +11,7 @@ const Home: NextPage = () => {const Home: NextPage = () => {
      const { program } = useProgram("3PHKaLH1QwP3jWbwBvn3PjhsW4b7cgpTPKbEKNwsgKJT", "nft-drop");
      const { mutateAsync: claim, isLoading, error } = useClaimNFT(program););
    const { data: metadata, isLoading, loadinMetadata } = useProgramMetadata(program););
-   const { data: claimConditions, isLoading, loadingClaimConditionserror } = useClaimConditions(program););
+   const { data: claimConditions, isLoading, loadingClaimConditions } = useClaimConditions(program););
 
 
   return (
